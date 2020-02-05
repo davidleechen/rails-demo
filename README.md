@@ -14,13 +14,9 @@ a local development environment - for that, Docker containers used.
     ```shell script
     docker-compose build
     ```
-1. Install NodeJS dependencies
+1. Setup application dependencies
     ```shell script
-    docker-compose run web yarn install
-    ```
-1. Create test databases
-    ```shell script
-    docker-compose run web rake db:create
+    docker-compose run web ./bin/setup
     ```
 1. Run the Docker compose command to spin everything up
     ```shell script
