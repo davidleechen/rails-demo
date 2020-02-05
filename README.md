@@ -10,6 +10,18 @@ a local development environment - for that, Docker containers used.
     ```shell script
     git clone git@github.com:davidleechen/rails-starter.git
     ```
+1. Build the main container that houses the web application
+    ```shell script
+    docker-compose build
+    ```
+1. Install NodeJS dependencies
+    ```shell script
+    docker-compose run web yarn install
+    ```
+1. Create test databases
+    ```shell script
+    docker-compose run web rake db:create
+    ```
 1. Run the Docker compose command to spin everything up
     ```shell script
     docker-compose up
