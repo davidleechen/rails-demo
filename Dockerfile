@@ -12,6 +12,7 @@ COPY Gemfile.lock /rails-starter/Gemfile.lock
 
 RUN bundle install
 COPY . /rails-starter
+RUN yarn install
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
