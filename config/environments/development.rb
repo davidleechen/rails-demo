@@ -61,10 +61,10 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   # Allow web_console from a Docker container network
-  config.web_console.whitelisted_ips = '172.24.0.0/16'
+  config.web_console.whitelisted_ips = '172.16.0.0/11'
 
   # Allow BetterErrors to show on a Docker container network
-  BetterErrors::Middleware.allow_ip! '172.24.0.0/16'
+  BetterErrors::Middleware.allow_ip! '172.16.0.0/12'
 
   # Setup LiveReload Rack middleware so we don't need a browser plugin
   config.middleware.insert_before ActionDispatch::Static, Rack::LiveReload
