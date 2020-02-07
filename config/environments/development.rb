@@ -65,7 +65,4 @@ Rails.application.configure do
 
   # Allow BetterErrors to show on a Docker container network
   BetterErrors::Middleware.allow_ip! '172.16.0.0/12'
-
-  # Setup LiveReload Rack middleware so we don't need a browser plugin
-  config.middleware.insert_before ActionDispatch::Static, Rack::LiveReload
 end
