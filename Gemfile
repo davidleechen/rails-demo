@@ -44,7 +44,7 @@ group :development do
   gem "better_errors"
   gem "binding_of_caller"
   gem 'rubocop', '~> 0.79.0', require: false
-  gem 'rack-livereload', require: false
+  gem 'rack-livereload'
   gem 'guard', require: false
   gem 'guard-minitest', require: false
   gem 'guard-livereload', require: false
