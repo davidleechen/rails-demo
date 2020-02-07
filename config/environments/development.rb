@@ -62,4 +62,7 @@ Rails.application.configure do
 
   # Allow web_console from a Docker container network
   config.web_console.whitelisted_ips = '172.24.0.0/16'
+
+  # Allow BetterErrors to show on a Docker container network
+  BetterErrors::Middleware.allow_ip! '172.24.0.0/16'
 end
