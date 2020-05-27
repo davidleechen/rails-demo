@@ -1,5 +1,5 @@
 # Rails Starter
-This repo aims to provide a fast way to spin up Rails application development environments. It is meant to provide the
+This repo aims to provide a demonstration of a fast way to spin up Rails application development environments. It is meant to provide the
 fastest, easiest way to get a new application ready to go on Rails 6.0 with the least amount of time spent configuring
 a local development environment - for that, Docker containers used.
 
